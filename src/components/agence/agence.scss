@@ -1,0 +1,108 @@
+@import "../../responsive/responsive.scss";
+
+.containerAgence{
+    height: 100vh;
+    background-color: #2120D5;
+    
+    @include xl{
+        height: 100vh;
+    }
+    @include md{
+        height: 100%;
+    }
+    @include sm{
+        height: 100%;
+    }
+    .agence{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 5rem 0;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        @include sm{
+            padding: 1rem 0;
+        }
+        .left{
+            width: 30rem;
+            height: 30rem;
+            @include xl{
+                width: 25rem;
+                height: 25rem;
+            }
+            @include sm{
+                width: 18rem;
+                height: 18rem;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .right{
+            width: 30rem;
+            height: 30rem;
+            background-color: #fff;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+            button{
+                padding: .5rem 1rem;
+                border: none;
+                font-size: 1.25rem;
+                background-color: #FFDB00;
+                position: absolute;
+                left: 61.59%;
+                top: 92%;
+                margin: 0;
+                cursor: pointer;
+                @include xl{
+                    font-size: 1.25rem;
+                    top: 90%;
+                    left: 53.59%;
+                }
+                @include sm{
+                    font-size: .55rem;
+                    top: 91%;
+                    left: 65.59%;
+                }
+            }
+            @include xl{
+                width: 25rem;
+                height: 25rem;
+            }
+            @include sm{
+                width: 18rem;
+                height: 18rem;
+                gap: 1rem;
+            }
+            h1{
+                font-size: 2rem;
+                @include sm{
+                    font-size: 1.25rem;
+                }
+            }
+            ul{
+                li{
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                    @include xl{
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+                    @include sm{
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}

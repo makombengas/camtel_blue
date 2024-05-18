@@ -1,0 +1,29 @@
+@import "../../responsive/responsive.scss";
+.scrollTopIconContainer{
+    position: fixed;
+    color:  #FFDB00 ;
+    top: 90%;
+    left: 96%;
+    z-index: 2000;
+    font-size: 4rem;
+    cursor: pointer;
+    animation: heartbeat 2s infinite;
+    transition: color 500ms ease;
+    &:hover{
+        color: #fff;
+    }
+    @include sm{
+        left: 84.5%;
+        top: 85%;
+        font-size: 3rem;
+    }
+}
+.scroll{
+    display: none;
+}
+@keyframes heartbeat {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}

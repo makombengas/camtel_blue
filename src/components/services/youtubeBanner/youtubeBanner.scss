@@ -1,0 +1,77 @@
+@import "../../../responsive/responsive.scss";
+
+.youtubeBannerContainer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    .YoutubeContentContainer{
+        padding: 0rem 0 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        h1{
+            font-size: 3rem;
+            color: #fff;
+            padding: 2.5rem 0;
+            text-shadow: 1px 1px 4px rgb(0, 0, 0);
+            text-align: center;
+            @include sm{
+                font-size: 2rem;
+           }
+        }
+    }
+    .youtubeContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        iframe{
+            width: 50%;
+            height: 30rem;
+            border-radius: .5rem;
+            @include md{
+                width: 80%;
+            height: 20rem;
+           }
+            @include sm{
+                width: 90%;
+            height: 12.5rem;
+           }
+        }
+        .youtubeBannerImage{
+           width: 50%;
+           height: 30rem;
+            border-radius: .5rem;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+            top: 50%;
+            z-index: 100;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #43A4FC;
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            .youtubeIcon{
+                font-size: 5rem;
+                margin-top: 2rem;
+                cursor: pointer;
+                color: #fff;
+                transition: color 0.5s ease;
+                &:hover{
+                    color: #FFDB00 ;
+                }
+            }
+        }
+    }
+}

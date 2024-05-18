@@ -1,0 +1,40 @@
+.notFoundContainer{
+   position: fixed;
+   width: 100vw;
+  
+    .notFound{
+        height: 100vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    gap: 1rem;
+    background-color: #dde8ff;
+    h1{
+        font-size: 3rem;
+        color: red;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    button{
+        transition: background-color .8s linear;
+        padding: .5rem;
+        background-color: #0000B6;
+       color: #fff;
+       border-radius: .15rem;
+       font-weight: 600;
+       border: none;
+       font-size: 1.5rem;
+       cursor: pointer;
+       border-radius: .25rem;
+    }
+}

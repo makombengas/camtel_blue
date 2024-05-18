@@ -1,0 +1,233 @@
+@import "../../responsive/responsive.scss";
+
+.navContainer{
+    background-color: #2120D5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 8rem;
+    padding: .5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+   
+    .left{
+        flex: .5;
+        img{
+            width: 5rem;
+            height: 5rem;
+            object-fit: cover;
+            cursor: pointer;  
+                  
+        }
+        @include sm{
+            z-index: 120;
+        }
+    }
+    .burgerMenu{
+        
+        display: none;
+        position: relative;
+
+        hr{
+            padding: 0 1.35rem;
+            background-color: #fff;
+        }
+        .left{
+           transform: rotate(-45deg);
+           transition: transform 500ms ease;
+        }
+        .middle{
+            position: absolute;
+            transform: rotate(45deg);
+            transition: transform 500ms ease;
+        }
+        .right{
+            top: 0rem;
+            position: absolute;
+            top: 1rem;
+            transform: rotate(45deg);
+            transition: transform 500ms ease;
+            opacity: 0;
+        }
+        @include sm{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .8rem;
+            z-index: 120;
+            cursor: pointer;
+        }
+    }
+    .right{
+        flex: 4;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 1rem;
+        @include sm{
+        display: none;
+    }
+       .rightNav{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                @include sm{
+                   flex-direction: column;
+                   padding-top: 10rem;
+                }
+                li{
+                    list-style: none;
+                   
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 1.25rem;
+                        padding: .5rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        @include lg{
+                            padding: .25rem;
+                            font-size: 1rem;
+                        }
+                         @include md{
+                            font-size: .8rem;
+                        }
+                        @include sm{
+                            font-size: 1.5rem;
+                        }
+                       
+                        &:hover{
+                            transition: background-color .8s linear;
+                            border-bottom: 3px solid #fff;
+                            border-radius: .15rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+            }
+       }
+       .language{
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        .langIcon{
+            cursor: pointer;
+        }
+        .langContainer{
+            position: absolute;
+            top: 2.25rem;
+            right: .025rem;
+            display: flex;
+            align-items: center;   
+            z-index: 1000;     
+            gap: .5rem;
+            img{
+                width: 2rem;
+                height: 2rem;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+       }
+    }
+
+    .handy{
+        flex: 4;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 1rem;
+      
+        @include sm{
+            width: 100vw;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            z-index: 100;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2120D5;     
+                flex-direction: column;
+      
+    }
+       .rightNav{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                @include sm{
+                   flex-direction: column;
+                   padding-top: 10rem;
+                   background-color: #0000B6;
+                  height: 100vh;
+                  width: 100vw;
+                }
+                li{
+                    list-style: none;
+                    
+                   
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 1.25rem;
+                        padding: .5rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        @include md{
+                            padding: .25rem;
+                            font-size: 1rem;
+                        }
+                        @include sm{
+                            font-size: 1.5rem;
+                        }
+                       
+                        &:hover{
+                            transition: background-color .8s linear;
+                            padding: .15rem .5rem;
+                            background-color: #fff;
+                           color: #0000B6;
+                           border-radius: .15rem;
+                           font-weight: 600;
+                        }
+                    }
+
+                }
+            }
+       }
+       .language{
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        .langIcon{
+            cursor: pointer;
+        }
+        .langContainer{
+            position: absolute;
+            top: 2.25rem;
+            right: .025rem;
+            display: flex;
+            align-items: center;   
+            z-index: 1000;     
+            gap: .5rem;
+            img{
+                width: 2rem;
+                height: 2rem;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+       }
+    }
+}

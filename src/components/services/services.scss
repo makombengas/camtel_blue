@@ -1,0 +1,337 @@
+@import "../../responsive/responsive.scss";
+
+.servicesContainer{
+    background-color: #000d30;
+    width: 100%;
+    height: 100%;
+    @include xxl{
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    @include sm{
+        padding: 0rem;
+    }
+    .allServicesContainer{
+        width: 100%;
+        height: 100%;
+        padding: 8rem 20rem;
+        background-color: #0d0130;
+        @include xxl{
+            padding: 8rem 5rem;  
+        }
+        @include md{
+            padding: 1rem;  
+        }
+        
+        h1{
+            color: #fff ;
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            @include sm{
+                font-size: 2rem;
+           }
+        }
+        .serviceContent{
+            padding: 5rem 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            
+            @include sm{
+                flex-direction: column;
+           }
+            .service{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: .5rem;
+                border-radius: .5rem;
+                width: 25rem;
+                height: 25rem;
+                background-color: #fff;
+                    @include sm{
+                        width: 18rem;
+                        height: 18rem;
+                   }
+                position: relative;
+                transition: all .5s linear;
+                &:hover{
+                    animation: myMove .5s linear;
+                   
+                 
+                }
+                .content{
+                    opacity: 0;
+                    border-radius: .5rem;
+                    position: absolute;
+                    background-color: #fff;
+                    width: 24rem;
+                    height: 24rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0 5rem;
+                    @include sm{
+                        width: 18rem;
+                        height: 18rem;
+                        padding: 0 2rem;
+                   }
+                    &:hover{
+                       
+                        opacity: 1;
+                     
+                    }
+                    img{
+                        width: 8rem;
+                        height: 8rem;
+                        object-fit: cover;
+                        position: absolute;
+                        left: 65%;
+                        top: 68%;
+                        margin: 0;
+                        @include sm{
+                            width: 3rem;
+                            height: 3rem;
+                            left: 78%;
+                            top: 78%;
+                       }
+                    }
+                    ul{
+                        li{
+                            padding: .5rem 0;
+                            font-size: 1.25rem;
+                            color: #122571;
+                            list-style: none;
+                        }
+                        li:before { content: "\25BA" " "; }
+
+                    }
+                }
+                    
+                .serviceIcon{
+                    font-size: 6rem;
+                    color: #fff;
+                    border-radius: 50%;
+                    background-color: #2120D5;
+                    padding: 1rem;
+                       @include xxl{
+                         font-size: 4rem; 
+                        }
+                    
+                }
+                h2{
+                    font-size: 2.5rem;
+                    color: #2120D5;
+                    text-align: center;
+                     @include xxl{
+                         font-size: 2rem; 
+                    }
+                }
+                hr{
+                    width: 80%;
+                    padding: .085rem 0;
+                    background-color: #FFDB00;
+                    border: none;
+                }
+                p{
+                    font-size: 1.5rem;
+                    text-align: center;
+                       @include xxl{
+                         font-size: 1rem; 
+                    }
+                }
+            }
+        }
+
+        .serviceCarouselContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0rem 0;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            h1{
+                font-size: 3rem;
+                color: #fff;
+                text-transform: capitalize;
+                padding: 2.5rem 0;
+                text-shadow: 1px 1px 4px rgb(0, 0, 0);
+                @include sm{
+                    font-size: 2rem;
+               }
+            }
+            p{
+                color: #fff;
+                line-height: 3rem;
+                font-size: 1.25rem;
+                text-align: center;
+                b{
+                    font-size: 1.5rem;
+                    color: #FFDB00;
+                }
+                @include sm{
+                    font-size: 1rem;
+                    font-weight: 300;
+               }
+            }
+        }
+    }
+
+    .serviceCarouselContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 5rem;
+        background-color: #0B1F8F;
+        width: 100%;
+        @include lg{
+            padding: 2rem 1rem;
+        }
+        @include sm{
+            padding: 2rem 1rem;
+        }
+        h1{
+            font-size: 3rem;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 2.5rem 0;
+            text-shadow: 1px 1px 4px rgb(0, 0, 0);
+            @include sm{
+                font-size: 2rem;
+           }
+        }
+        p{
+            color: #fff;
+            line-height: 3rem;
+            font-size: 1.25rem;
+            text-align: center;
+            padding: 0rem 15rem;
+          
+            @include lg{
+                padding: 2rem;
+           }
+            b{
+                font-size: 1.5rem;
+                color: #FFDB00;
+                @include sm{
+                    font-size: 1.15rem;
+               }
+            }
+            @include sm{
+                font-size: 1rem;
+                font-weight: 300;
+                padding:  0rem;
+                line-height: 2rem;
+           }
+        }
+    }
+    .serviceBanner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #0040E6;
+        height: 100%;
+        padding: 5rem 0rem;
+        h1{
+            font-size: 3rem;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 2.5rem 0;
+            text-shadow: 1px 1px 4px rgb(0, 0, 0);
+            @include sm{
+                font-size: 2rem;
+           }
+        }
+        .titleContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            @include sm{
+                flex-direction: column;
+            }
+            .left{
+                flex: 1;
+                width: 30rem;
+                height: 3rem;
+                background-color: #0A1C85;
+                color: #fff;
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem;
+                gap: 1rem;
+                cursor: pointer;
+                @include sm{
+                    width: 40rem;
+                }
+                span{
+                    font-size: 1.25rem;
+                    @include sm{
+                        font-size: .7rem;
+                    }
+                    @include xl{
+                        font-size: .75rem;
+                    }
+                }
+                @include lg{
+                    width: 18rem;
+                }
+            }
+            .right{
+                flex: 1;
+                width: 30rem;
+                height: 3rem;
+                background-color: #0A1C85;
+                color: #fff;
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem;
+                gap: 1rem;
+                cursor: pointer;
+                @include sm{
+                    width: 40rem;
+                }
+                span{
+                    font-size: 1.25rem;
+                    @include xl{
+                        font-size: .75rem;
+                    }
+                    @include sm{
+                        font-size: .7rem;
+                    }
+                }
+                @include lg{
+                    width: 18rem;
+                }
+               
+            }
+        }
+        img{
+            @include lg{
+                width: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+@keyframes myMove {
+  
+    to {transform: rotateY(180deg);}
+  }
