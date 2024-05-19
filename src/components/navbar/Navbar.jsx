@@ -12,8 +12,8 @@ const Navbar = () => {
         setOpenNav(false)
     }
    
-    const handleSetActive = (to) => {
-        console.log(to);
+    const handleSetActive = () => {
+      
         setOpenNav(false)
       };
      
