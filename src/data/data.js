@@ -143,6 +143,10 @@ export const agenceData =[
         city:"Littoral",
         image: agenceImageData.littoral,
         link:"littoral",
+        coordination:{
+            longitude:9.786072,
+            latitude:4.061536,
+        },
         cityData:[
             {
                 id:1,
@@ -161,6 +165,11 @@ export const agenceData =[
         city:"Centre",
         image: agenceImageData.centre,
         link:"centre",
+        coordination:{
+            longitude:11.501346,
+            latitude:3.844119,
+        },
+        
         cityData:[
             {
                 id:1,
@@ -179,6 +188,11 @@ export const agenceData =[
         city:"Ouest",
         image: agenceImageData.ouest,
         link:"ouest",
+        coordination:{
+           
+            longitude:10.25332,
+            latitude:5.283333,
+        },
         cityData:[
             {
                 id:1,
@@ -196,6 +210,11 @@ export const agenceData =[
         city:"Nord-Ouest",
         image: agenceImageData.nordOuest,
         link:"nord-ouest",
+        coordination:{
+            
+            longitude:10.084549,
+            latitude:5.573492,
+        },
         cityData:[
             {
                 id:1,
@@ -209,3 +228,4 @@ export const agenceData =[
     },
 
 ]
+
