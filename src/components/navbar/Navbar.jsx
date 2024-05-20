@@ -4,6 +4,7 @@ import { allImagesDate } from '../../data/dataImage/dataImage';
 import './navbar.scss';
 import { BiWorld } from "react-icons/bi";
 import { Link } from 'react-scroll';
+
 const Navbar = () => {
     const [openLang, setOpenLang] =useState(false);
     const [openNav, setOpenNav] =useState(false);
@@ -64,14 +65,15 @@ const Navbar = () => {
             </div>
             <div className="language">
             <BiWorld className='langIcon' onMouseOver={()=>setOpenLang(true)} />
-           {openLang && <div className="langContainer">
-                
-                    <img  src={flagsData.france} alt="" onClick={handleNav} />
-                        <img  src={flagsData.england} alt="" onClick={handleNav} />
-                
-            </div>}
+                {openLang && <div className="langContainer">
+                      
+                          <img  src={flagsData.france} alt="" onClick={handleNav} />
+                              <img  src={flagsData.england} alt="" onClick={handleNav} />
+                      
+                  </div>
+                  }
             </div>
-        </div>
+            </div>
    </div>
   )
 }
