@@ -164,18 +164,24 @@
             ul{
                 display: flex;
                 align-items: center;
-                gap: 1rem;
                 width: 100%;
                 @include sm{
+                    gap: 1.5rem;
                    flex-direction: column;
                    padding-top: 10rem;
                    background-color: #0000B6;
                   height: 100vh;
                   width: 100vw;
+                  
                 }
                 li{
                     list-style: none;
-                    
+                   
+                    @include sm{
+                        position: relative;
+                        top: -1.5rem;
+                        margin: 0;
+                    }
                    
                     a{
                         color: #fff;
