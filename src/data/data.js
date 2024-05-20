@@ -176,7 +176,7 @@ export const agenceData =[
                 name:"Agence Blue Centre",
                 city:"Centre",
                 image: agenceImageData.centre,
-                cityName:["ENTREPRISES (Face Camair)", "JAMOT (Dragage, Club CAMTEL)", "BOULEVARD", "BIYEM ASSI", "BEPANDA", "NGOUSSO", "MENDONG", "MIMBOMAN", "NKOLBISSON", "MVAN"  ],
+                cityName:["ENTREPRISES (Face Camair)", "JAMOT (Dragage, Club CAMTEL)", "BOULEVARD", "BIYEM ASSI",  "NGOUSSO", "MENDONG", "MIMBOMAN", "NKOLBISSON", "MVAN"  ],
                 
             }
         ]
